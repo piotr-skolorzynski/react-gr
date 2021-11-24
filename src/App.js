@@ -1,7 +1,13 @@
+import Navigation from "./components/Navigation/Navigation";
+import Content from "./components/Content";
+import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <h2>App component</h2>
+    <Wrapper>
+      <Navigation />
+      <Content />
+    </Wrapper>
   );
 }
 
