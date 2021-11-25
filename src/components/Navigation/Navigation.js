@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import {
   CustomizedAccount,
   CustomizedAppBar,
+  CustomizedLink,
   CustomizedToolbar,
   LinksGroup,
 } from "./Navigation.styled";
@@ -18,15 +17,15 @@ const Navigation = () => {
       <CustomizedAppBar position="fixed">
         <CustomizedToolbar>
           <LinksGroup direction="row" spacing={3}>
-            <Button variant="text" sx={{ ml: 3 }} component={Link} to="/">
+            <CustomizedLink variant="text" sx={{ ml: 3 }} component={Link} to="/">
               Dashboard
-            </Button>
-            <Button variant="text" component={Link} to="/recipes">
+            </CustomizedLink>
+            <CustomizedLink variant="text" component={Link} to="/recipes">
               Recipes
-            </Button>
-            <Button variant="text" component={Link} to="/challenge">
+            </CustomizedLink>
+            <CustomizedLink variant="text" component={Link} to="/challenge">
               Challenge
-            </Button>
+            </CustomizedLink>
           </LinksGroup>
           <CustomizedAccount
             startIcon={<Avatar sx={{ width: 36, height: 36 }} />}
@@ -34,7 +33,7 @@ const Navigation = () => {
           >{`${name} ${surname}`}</CustomizedAccount>
         </CustomizedToolbar>
       </CustomizedAppBar>
-      <Toolbar />
+      <CustomizedToolbar />
     </>
   );
 };
