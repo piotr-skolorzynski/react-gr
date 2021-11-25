@@ -27,6 +27,7 @@ export const CustomizedLink = styled(Button)`
   color: var(--text-color);
   :hover {
     background-color: #fff;
+    color: var(--primary-text-color);
   }
 `;
 

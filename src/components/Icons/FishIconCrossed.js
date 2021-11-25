@@ -50,7 +50,7 @@ const FishIconCrossed = (color, width, height) => {
                   y="0"
                   rx="0"
                   ry="0"
-                  width="120"
+                  width="100"
                   height="120"
                 />
               </g>
@@ -72,7 +72,7 @@ const FishIconCrossed = (color, width, height) => {
                   y="50"
                   rx="0"
                   ry="0"
-                  width="120"
+                  width="100"
                   height="120"
                 />
               </g>

@@ -17,7 +17,12 @@ const Navigation = () => {
       <CustomizedAppBar position="fixed">
         <CustomizedToolbar>
           <LinksGroup direction="row" spacing={3}>
-            <CustomizedLink variant="text" sx={{ ml: 3 }} component={Link} to="/">
+            <CustomizedLink
+              variant="text"
+              sx={{ ml: 3 }}
+              component={Link}
+              to="/"
+            >
               Dashboard
             </CustomizedLink>
             <CustomizedLink variant="text" component={Link} to="/recipes">
