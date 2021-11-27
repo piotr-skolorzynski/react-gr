@@ -15,6 +15,7 @@ import ChickenIconCrosses from "../Icons/ChickenIconCrossed";
 import FishIconCrossed from "../Icons/FishIconCrossed";
 import CustomizedStepper from "./CustomizedStepper";
 import DashboardFooter from "./DashboardFooter";
+import CustomizedTable from "./table/CustomizedTable";
 
 const Dashboard = () => {
   return (
@@ -53,6 +54,7 @@ const Dashboard = () => {
           </Box>
         </IconsContainer>
       </DashBoardHeader>
+      <CustomizedTable />
       <DashboardFooter />
     </>
   );

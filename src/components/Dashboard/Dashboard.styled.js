@@ -9,7 +9,6 @@ export const DashBoardHeader = styled(Box)`
   display: flex;
   justify-content: space-between;
   background-color: inherit;
-  border: 1px solid black;
 `;
 
 export const CustomizedStepper = styled(Stepper)``;
