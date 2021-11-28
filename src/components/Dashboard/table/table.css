@@ -1,3 +1,5 @@
+/* table classes */
+
 .table {
   width: 978px;
   margin: 0 auto;
@@ -12,11 +14,119 @@
   border-left: 2px solid #c7c6c6;
 }
 
-.daycell-bottom {
-    border-bottom: none;
-}
-
 .cell-background {
   background-color: #e5e5e5;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23dddddd' fill-opacity='1'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.title-day {
+  color: var(--seconadary-text-color);
+  border-left: 2px solid var(--secondary-background);
+  border-bottom: 2px solid var(--secondary-background);
+}
+
+.title-day--side {
+  color: var(--seconadary-text-color);
+  border-bottom: 2px solid var(--secondary-background);
+}
+
+.title-day--active {
+  color: var(--primary-text-color);
+  border-top: 2px solid var(--primary-text-color);
+  border-right: 2px solid var(--primary-text-color);
+  border-left: 2px solid var(--primary-text-color);
+}
+
+.daycell {
+  position: relative;
+  color: var(--text-color);
+  border-left: 2px solid var(--secondary-background);
+  border-bottom: 2px solid var(--secondary-background);
+}
+
+.daycell--side {
+  position: relative;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--secondary-background);
+}
+
+.daycell--bottom {
+  border-bottom: none;
+}
+
+.daycell--active {
+  color: #000;
+  border-left: 2px solid var(--primary-text-color);
+  border-right: 2px solid var(--primary-text-color);
+  cursor: pointer;
+}
+
+.daycell-footer {
+  border-bottom: 2px solid #c7c6c6;
+  border-left: 2px solid #c7c6c6;
+}
+
+.daycell-footer--side {
+  border-bottom: 2px solid #c7c6c6;
+}
+
+.daycell-footer--active {
+  border-left: 2px solid var(--primary-text-color);
+  border-right: 2px solid var(--primary-text-color);
+}
+
+.workoutcell {
+  border-left: 2px solid #c7c6c6;
+}
+
+.workoutcell--side {
+  border: none;
+}
+
+.workoutcell--active {
+  border: 2px solid var(--primary-text-color);
+  border-top: none;
+  cursor: pointer;
+}
+
+.freedaycell {
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-left: 2px solid var(--secondary-background);
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 300;
+}
+
+/* fontawesome icons */
+
+.dumbbell-icon {
+  font-size: 16px;
+}
+
+.dumbbell-icon--checked {
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+.check-icon {
+  display: none;
+  font-size: 10px;
+  color: var(--primary-text-color);
+  margin-left: 3px;
+}
+
+.check-icon--show {
+  display: inline;
+}
+.check-icon-circle {
+  display: none;
+}
+
+.check-icon-cirlce--show {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  color: var(--primary-text-color);
+  font-size: 16px;
 }
