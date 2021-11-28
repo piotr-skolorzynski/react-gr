@@ -20,7 +20,7 @@ export const WeekNumber = styled(Box)`
   justify-content: space-evenly;
   align-items: center;
   color: var(--primary-text-color);
-  font-size: 34px;
+  font-size: 38px;
 `;
 
 export const CustomizedIconButton = {
