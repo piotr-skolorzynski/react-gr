@@ -8,6 +8,7 @@ import {
   CustomizedToolbar,
   LinksGroup,
 } from "./Navigation.styled";
+import userAvatar from "../../assets/woman-avatar.jpg";
 
 const Navigation = () => {
   const name = "Olivia";
@@ -33,7 +34,7 @@ const Navigation = () => {
             </CustomizedLink>
           </LinksGroup>
           <CustomizedAccount
-            startIcon={<Avatar sx={{ width: 36, height: 36 }} />}
+            startIcon={<Avatar src={userAvatar} sx={{ width: 36, height: 36 }} />}
             endIcon={<KeyboardArrowDownIcon />}
           >{`${name} ${surname}`}</CustomizedAccount>
         </CustomizedToolbar>

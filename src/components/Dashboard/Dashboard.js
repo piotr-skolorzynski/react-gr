@@ -43,7 +43,15 @@ const Dashboard = () => {
       <DashBoardHeader>
         <CustomizedStepper />
         <WeekNumber>
-          {weekIndex === 0 ? null : (
+          {weekIndex === 0 ? (
+            <IconButton
+              aria-label="minimal week number reached"
+              sx={CustomizedIconButton}
+              style={{ cursor: "default", visibility: "hidden" }}
+            >
+              <ChevronLeftIcon />
+            </IconButton>
+          ) : (
             <IconButton
               aria-label="decrease week number"
               sx={CustomizedIconButton}
@@ -61,7 +69,15 @@ const Dashboard = () => {
             >
               <ChevronRightIcon />
             </IconButton>
-          ) : null}
+          ) : (
+            <IconButton
+              aria-label="maximum week number reached"
+              sx={CustomizedIconButton}
+              style={{ cursor: "default", visibility: "hidden" }}
+            >
+              <ChevronRightIcon />
+            </IconButton>
+          )}
         </WeekNumber>
         <IconsContainer>
           <span>select your protein options</span>
