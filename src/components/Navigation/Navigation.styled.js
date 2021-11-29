@@ -1,7 +1,6 @@
 import { styled } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
 export const CustomizedAppBar = styled(AppBar)`
@@ -14,21 +13,6 @@ export const CustomizedToolbar = styled(Toolbar)`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-`;
-
-export const LinksGroup = styled(Stack)`
-  height: 100%;
-  margin-left: 118px;
-  color: var(--text-color);
-  border-left: 1px solid var(--secondary-background);
-`;
-
-export const CustomizedLink = styled(Button)`
-  color: var(--text-color);
-  :hover {
-    background-color: #fff;
-    color: var(--primary-text-color);
-  }
 `;
 
 export const CustomizedAccount = styled(Button)`
