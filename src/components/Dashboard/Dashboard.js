@@ -16,7 +16,7 @@ import ChickenIconCrosses from "../Icons/ChickenIconCrossed";
 import FishIconCrossed from "../Icons/FishIconCrossed";
 import CustomStepper from "./stepper/CustomStepper";
 import DashboardFooter from "./DashboardFooter";
-import CustomizedTable from "./table/CustomizedTable";
+import CustomTable from "./table/CustomTable";
 
 // dane które możnaby pobrać z bazy danych charakterystyczne dla zalogowane dla użytkownika
 // dane do pozyskania w poniższym komponenci albo w postaci props, z wykorzystanie useEffect
@@ -96,7 +96,7 @@ const Dashboard = () => {
           </Box>
         </IconsContainer>
       </DashBoardHeader>
-      <CustomizedTable />
+      <CustomTable />
       <DashboardFooter />
     </>
   );

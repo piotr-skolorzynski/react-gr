@@ -18,7 +18,7 @@ export const WeekNumber = styled(Box)`
   justify-content: space-evenly;
   align-items: center;
   color: var(--primary-text-color);
-  font-size: 38px;
+  font-size: 46px;
 `;
 
 export const CustomizedIconButton = {
@@ -30,10 +30,11 @@ export const CustomizedIconButton = {
 };
 
 export const IconsContainer = styled(Box)`
+  width: 205px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 12px;
+  font-size: 10px;
   color: var(--text-color);
   text-transform: uppercase;
 `;

@@ -98,6 +98,10 @@
   font-weight: 300;
 }
 
+.cell-next-to-active {
+  border-left: none;
+}
+
 /* fontawesome icons */
 
 .dumbbell-icon {

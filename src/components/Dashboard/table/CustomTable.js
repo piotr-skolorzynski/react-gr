@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import "./table.css";
 import PrintIcon from "@mui/icons-material/Print";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
@@ -9,66 +8,9 @@ import {
   faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
-
-const TitleHours = styled.td`
-  height: 50px;
-  width: 84px;
-`;
-
-const TitleDay = styled.td`
-  width: 149px;
-  background-color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 24px;
-`;
-
-const Hours = styled.td`
-  height: 92px;
-  width: 84px;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 300;
-`;
-
-const HoursFooter = styled.td`
-  height: 35px;
-  width: 84px;
-  border-bottom: 2px solid #c7c6c6;
-`;
-
-const DayCell = styled.td`
-  padding: 10px;
-  background-color: #fff;
-  font-size: 14px;
-`;
-
-const DayCellFooter = styled.td`
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-`;
-
-const WorkoutTitle = styled.td`
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  text-align: center;
-`;
-
-const WorkoutCell = styled.td`
-  font-size: 10px;
-  font-weight: 500;
-  text-align: center;
-`;
+import { DayCell, DayCellFooter, Hours, HoursFooter, TitleDay, TitleHours, WorkoutCell, WorkoutTitle } from "./CustomTable.styled";
 
 const CustomizedTable = () => {
-  const changeActivityStatus = (e) => {
-    console.log(e.target.classList);
-  };
 
   return (
     <table cellSpacing="0" cellPadding="0" border="0" className="table">
@@ -77,7 +19,7 @@ const CustomizedTable = () => {
           <TitleHours className="cell-background"></TitleHours>
           <TitleDay className="title-day--side">Day 64</TitleDay>
           <TitleDay className="title-day title-day--active">Day 65</TitleDay>
-          <TitleDay className="title-day">Day 66</TitleDay>
+          <TitleDay className="title-day cell-next-to-active">Day 66</TitleDay>
           <TitleDay className="title-day">Day 67</TitleDay>
           <TitleDay className="title-day">Day 68</TitleDay>
           <TitleDay className="title-day">Day 69</TitleDay>
@@ -95,7 +37,9 @@ const CustomizedTable = () => {
             />
           </DayCell>
           <DayCell className="daycell daycell--active">Bode*e Shake</DayCell>
-          <DayCell className="daycell">Bode*e Shake</DayCell>
+          <DayCell className="daycell cell-next-to-active">
+            Bode*e Shake
+          </DayCell>
           <DayCell className="daycell">Bode*e Shake</DayCell>
           <DayCell className="daycell">Bode*e Shake</DayCell>
           <DayCell className="daycell">Bode*e Shake</DayCell>
@@ -117,7 +61,9 @@ const CustomizedTable = () => {
           <DayCell className="daycell daycell--active">
             Ham and Swiss Roll Ups
           </DayCell>
-          <DayCell className="daycell">Grilled Steak (HC)</DayCell>
+          <DayCell className="daycell cell-next-to-active">
+            Grilled Steak (HC)
+          </DayCell>
           <DayCell className="daycell">Ham and Swiss Roll Ups</DayCell>
           <DayCell className="daycell">Ham and Swiss Roll Ups</DayCell>
           <DayCell className="daycell">Grilled Steak (HC)</DayCell>
@@ -135,11 +81,12 @@ const CustomizedTable = () => {
           </DayCell>
           <DayCell
             className="daycell daycell--active"
-            onClick={changeActivityStatus}
           >
             Turkey Melt
           </DayCell>
-          <DayCell className="daycell">Bode*e Shake</DayCell>
+          <DayCell className="daycell cell-next-to-active">
+            Bode*e Shake
+          </DayCell>
           <DayCell className="daycell">Turkey Melt</DayCell>
           <DayCell className="daycell">Bode*e Shake</DayCell>
           <DayCell className="daycell">Bode*e Shake</DayCell>
@@ -158,7 +105,7 @@ const CustomizedTable = () => {
           <DayCell className="daycell daycell--active">
             Bode*e Burn with Mozarella and Tomato Slices
           </DayCell>
-          <DayCell className="daycell">
+          <DayCell className="daycell cell-next-to-active">
             Bode*e Burn and Whole-Wheat English Muffin with Butter Spray
           </DayCell>
           <DayCell className="daycell">
@@ -181,7 +128,7 @@ const CustomizedTable = () => {
           <DayCell className="daycell daycell--bottom daycell--active">
             Turkey Melt
           </DayCell>
-          <DayCell className="daycell daycell--bottom">
+          <DayCell className="daycell daycell--bottom cell-next-to-active">
             Garlic Lime Chicken (HC)
           </DayCell>
           <DayCell className="daycell daycell--bottom">Turkey Melt</DayCell>
@@ -198,7 +145,7 @@ const CustomizedTable = () => {
           <DayCellFooter className="cell-background daycell-footer daycell-footer--active">
             low-carb
           </DayCellFooter>
-          <DayCellFooter className="cell-background daycell-footer">
+          <DayCellFooter className="cell-background daycell-footer cell-next-to-active">
             high-carb
           </DayCellFooter>
           <DayCellFooter className="cell-background daycell-footer">
@@ -238,7 +185,7 @@ const CustomizedTable = () => {
               className="check-icon check-icon--show"
             />
           </WorkoutCell>
-          <WorkoutCell className="cell-background workoutcell">
+          <WorkoutCell className="cell-background workoutcell cell-next-to-active">
             <FontAwesomeIcon icon={faDumbbell} className="dumbbell-icon" />
             <FontAwesomeIcon icon={faCheck} className="check-icon" />
           </WorkoutCell>

@@ -2,10 +2,17 @@ import styled from "styled-components";
 
 export const StepperWrapper = styled.div`
   width: 228px;
+  height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+
+export const StepperHeader = styled.span`
+  font-size: 10px;
+  text-transform: uppercase;
+`;
+
 export const Step = styled.div`
   width: 10px;
   height: 10px;
