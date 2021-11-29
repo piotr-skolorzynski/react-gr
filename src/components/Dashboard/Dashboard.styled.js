@@ -1,6 +1,5 @@
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
 
 export const DashBoardHeader = styled(Box)`
   width: 978px;
@@ -8,10 +7,9 @@ export const DashBoardHeader = styled(Box)`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: inherit;
 `;
-
-export const CustomizedStepper = styled(Stepper)``;
 
 export const WeekNumber = styled(Box)`
   width: 296px;

@@ -14,7 +14,7 @@ import MeatIcon from "../Icons/MeatIcon";
 import BroccoliIcon from "../Icons/BroccoliIcon";
 import ChickenIconCrosses from "../Icons/ChickenIconCrossed";
 import FishIconCrossed from "../Icons/FishIconCrossed";
-import CustomizedStepper from "./CustomizedStepper";
+import CustomStepper from "./stepper/CustomStepper";
 import DashboardFooter from "./DashboardFooter";
 import CustomizedTable from "./table/CustomizedTable";
 
@@ -41,7 +41,7 @@ const Dashboard = () => {
   return (
     <>
       <DashBoardHeader>
-        <CustomizedStepper />
+        <CustomStepper />
         <WeekNumber>
           {weekIndex === 0 ? (
             <IconButton
